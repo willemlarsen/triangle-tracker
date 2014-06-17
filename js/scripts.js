@@ -10,14 +10,16 @@ var Triangle = {
 			 } else {
 			 	return true;
 			}
+		}, 
+
+		type: function() {
+			if (this.sideA === this.sideB && this.sideA === this.sideC) {
+				return "equilateral"
+			}
 		}
+
 };
 
-/*function Person(sideA, sideB, sideC) {
-	this.sideA = sideA;
-	this.sideB = sideB;
-	this.sideC = sideC;
-}*/
 
 
 

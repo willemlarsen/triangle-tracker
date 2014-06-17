@@ -16,4 +16,13 @@ describe('Triangle', function () {
 					exampleTriangleTwo.valid().should.equal(false);
 			});
 		});
+	describe('type', function () {
+			it('returns "equilateral" if a potential triangle is an equilateral triangle', function () {
+			var exampleTriangleThree = Object.create(Triangle);
+				exampleTriangleThree.sideA = 4;
+				exampleTriangleThree.sideB = 4;
+				exampleTriangleThree.sideC = 4;
+				exampleTriangleThree.type().should.equal('equilateral');
+		});
+	});
 });
