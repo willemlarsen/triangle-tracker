@@ -14,8 +14,12 @@ var Triangle = {
 
 		type: function() {
 			if (this.sideA === this.sideB && this.sideA === this.sideC) {
-				return "equilateral"
+				return "equilateral";
+			} else if (this.sideA === this.sideB || this.sideA === this.sideC || this.sideC === this.sideB) {
+				return "isosceles";
 			}
+			//  else {
+			// 	return "scalene";
 		}
 
 };

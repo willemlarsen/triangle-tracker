@@ -18,11 +18,18 @@ describe('Triangle', function () {
 		});
 	describe('type', function () {
 			it('returns "equilateral" if a potential triangle is an equilateral triangle', function () {
-			var exampleTriangleThree = Object.create(Triangle);
-				exampleTriangleThree.sideA = 4;
-				exampleTriangleThree.sideB = 4;
-				exampleTriangleThree.sideC = 4;
-				exampleTriangleThree.type().should.equal('equilateral');
-		});
+				var exampleTriangleThree = Object.create(Triangle);
+					exampleTriangleThree.sideA = 4;
+					exampleTriangleThree.sideB = 4;
+					exampleTriangleThree.sideC = 4;
+					exampleTriangleThree.type().should.equal('equilateral');
+			});
+			it('returns "isosceles" if a potential triangle is an isosceles triangle', function () {
+				var exampleTriangleFour = Object.create(Triangle);
+					exampleTriangleFour.sideA = 2;
+					exampleTriangleFour.sideB = 3;
+					exampleTriangleFour.sideC = 2;
+					exampleTriangleFour.type().should.equal('isosceles');
+			});
 	});
 });
