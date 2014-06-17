@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Triangle Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Triangle Tracker</h1>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3>New triangle</h3>
+          <form id="new-triangle">
+            <div class="form-group">
+              <label for="new-triangle-side1">Side 1</label>
+              <input type="text" class="form-control" id="new-triangle-side1">
+            </div>
+            <div class="form-group">
+              <label for="new-triangle-side2">Side 2</label>
+              <input type="text" class="form-control" id="new-triangle-side2">
+            </div>
+            <div class="form-group">
+              <label for="new-triangle-side3">Side 3</label>
+              <input type="text" class="form-control" id="new-triangle-side3">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <h3>Equilateral triangles</h3>
+          <ul id="equilateral">
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Isosceles triangles</h3>
+          <ul id="isosceles">
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Scalene triangles</h3>
+          <ul id="scalene">
+          </ul>
+        </div>
+      </div>
+</html>
