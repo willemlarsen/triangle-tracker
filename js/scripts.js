@@ -1,6 +1,6 @@
-var TriangleTracker = {
+var Triangle = {
 
-		triangleTest: function () {
+		valid: function () {
 			 if (this.sideA > (this.sideB + this.sideC)) {
 			 	return false;
 			 } else if (this.sideB > (this.sideA + this.sideC)) {
