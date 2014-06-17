@@ -17,9 +17,9 @@ var Triangle = {
 				return "equilateral";
 			} else if (this.sideA === this.sideB || this.sideA === this.sideC || this.sideC === this.sideB) {
 				return "isosceles";
+			} else {
+				return "scalene";
 			}
-			//  else {
-			// 	return "scalene";
 		}
 
 };

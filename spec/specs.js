@@ -31,5 +31,12 @@ describe('Triangle', function () {
 					exampleTriangleFour.sideC = 2;
 					exampleTriangleFour.type().should.equal('isosceles');
 			});
+			it('returns "scalene" if a potential triangle is neither isosceles or equilateral', function () {
+				var exampleTriangleFive = Object.create(Triangle);
+					exampleTriangleFive.sideA = 3;
+					exampleTriangleFive.sideB = 4;
+					exampleTriangleFive.sideC = 5;
+					exampleTriangleFive.type().should.equal('scalene');
+			});
 	});
 });
